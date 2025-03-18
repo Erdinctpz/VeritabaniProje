@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="tr" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hoş Geldin</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 50px; }
+    </style>
+</head>
+<body>
+<h2>Hoşgeldin, <span th:text="${username}"></span>!!</h2>
+<p>İşte JWT Token'in: <span th:text="${token}"></span></p>
+<a th:href="@{/logout}">Çıkış Yap</a>
+</body>
+</html>
